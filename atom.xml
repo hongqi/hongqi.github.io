@@ -4,7 +4,7 @@
   <subtitle><![CDATA[积少成多，滴水穿石。]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-05-17T14:47:55.000Z</updated>
+  <updated>2015-05-21T14:21:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[移动端触摸事件]]></title>
+    <link href="http://yoursite.com/2015/05/21/touchstart-%E8%A7%A6%E6%91%B8%E5%88%97%E8%A1%A8/"/>
+    <id>http://yoursite.com/2015/05/21/touchstart-触摸列表/</id>
+    <published>2015-05-21T14:10:00.000Z</published>
+    <updated>2015-05-21T14:21:42.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="触摸事件">触摸事件</h3><p>在开发中最常使用的三个触摸事件是：</p>
+<ul>
+<li>touchstart: 手指触发触摸</li>
+<li>touchmove: 手指移动或者拖拽dom</li>
+<li>touchend: 手指移开</li>
+</ul>
+<p>每个触摸事件包含三个触摸列表</p>
+<ul>
+<li>touches: 位于<strong>屏幕</strong>所有手指列表</li>
+<li>targetTouches: 位于<strong>当前dom</strong>元素的手指列表</li>
+<li>changedTouches: 涉及<strong>当前事件</strong>的手指列表</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="触摸事件">触摸事件</h3><p>在开发中最常使用的三个触摸事件是：</p>
+<ul>
+<li>touchstart: 手指触发触摸</li>
+<li>touchmove: 手指移动或者拖拽dom</li>
+<li>touchend: 手指移开</li>
+</u]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[纵向瀑布流的实现]]></title>

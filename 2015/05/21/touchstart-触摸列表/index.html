@@ -4,22 +4,52 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>纵向瀑布流的实现 | write 1000 words a week</title>
+    <title>移动端触摸事件 | write 1000 words a week</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="John Abraham">
     
 
     
-    <meta name="description" content="学习总结 知识管理">
+    <meta name="description" content="触摸事件在开发中最常使用的三个触摸事件是：
+
+touchstart: 手指触发触摸
+touchmove: 手指移动或者拖拽dom
+touchend: 手指移开
+
+每个触摸事件包含三个触摸列表
+
+touches: 位于屏幕所有手指列表
+targetTouches: 位于当前dom元素的手指列表
+changedTouches: 涉及当前事件的手指列表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="纵向瀑布流的实现">
-<meta property="og:url" content="http://yoursite.com/2015/05/17/纵向瀑布流的实现/index.html">
+<meta property="og:title" content="移动端触摸事件">
+<meta property="og:url" content="http://yoursite.com/2015/05/21/touchstart-触摸列表/index.html">
 <meta property="og:site_name" content="write 1000 words a week">
-<meta property="og:description" content="学习总结 知识管理">
+<meta property="og:description" content="触摸事件在开发中最常使用的三个触摸事件是：
+
+touchstart: 手指触发触摸
+touchmove: 手指移动或者拖拽dom
+touchend: 手指移开
+
+每个触摸事件包含三个触摸列表
+
+touches: 位于屏幕所有手指列表
+targetTouches: 位于当前dom元素的手指列表
+changedTouches: 涉及当前事件的手指列表">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="纵向瀑布流的实现">
-<meta name="twitter:description" content="学习总结 知识管理">
+<meta name="twitter:title" content="移动端触摸事件">
+<meta name="twitter:description" content="触摸事件在开发中最常使用的三个触摸事件是：
+
+touchstart: 手指触发触摸
+touchmove: 手指移动或者拖拽dom
+touchend: 手指移开
+
+每个触摸事件包含三个触摸列表
+
+touches: 位于屏幕所有手指列表
+targetTouches: 位于当前dom元素的手指列表
+changedTouches: 涉及当前事件的手指列表">
 
     
     <link rel="alternative" href="/atom.xml" title="write 1000 words a week" type="application/atom+xml">
@@ -77,14 +107,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/05/17/纵向瀑布流的实现/" title="纵向瀑布流的实现" itemprop="url">纵向瀑布流的实现</a>
+      <a href="/2015/05/21/touchstart-触摸列表/" title="移动端触摸事件" itemprop="url">移动端触摸事件</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="John Abraham" target="_blank" itemprop="author">John Abraham</a>
 		
   <p class="article-time">
-    <time datetime="2015-05-17T14:47:55.000Z" itemprop="datePublished"> 发表于 2015-05-17</time>
+    <time datetime="2015-05-21T14:10:00.000Z" itemprop="datePublished"> 发表于 2015-05-21</time>
     
   </p>
 </header>
@@ -93,11 +123,23 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#触摸事件"><span class="toc-number">1.</span> <span class="toc-text">触摸事件</span></a></li></ol>
 		
 		</div>
 		
-		  
+		<h3 id="触摸事件">触摸事件</h3><p>在开发中最常使用的三个触摸事件是：</p>
+<ul>
+<li>touchstart: 手指触发触摸</li>
+<li>touchmove: 手指移动或者拖拽dom</li>
+<li>touchend: 手指移开</li>
+</ul>
+<p>每个触摸事件包含三个触摸列表</p>
+<ul>
+<li>touches: 位于<strong>屏幕</strong>所有手指列表</li>
+<li>targetTouches: 位于<strong>当前dom</strong>元素的手指列表</li>
+<li>changedTouches: 涉及<strong>当前事件</strong>的手指列表</li>
+</ul>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -109,7 +151,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/05/17/纵向瀑布流的实现/" data-title="纵向瀑布流的实现 | write 1000 words a week" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2015/05/21/touchstart-触摸列表/" data-title="移动端触摸事件 | write 1000 words a week" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -122,19 +164,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/05/21/touchstart-触摸列表/" title="移动端触摸事件">
-  <strong>上一篇：</strong><br/>
-  <span>
-  移动端触摸事件</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/05/15/写在前面/"  title="写在前面">
+<a href="/2015/05/17/纵向瀑布流的实现/"  title="纵向瀑布流的实现">
  <strong>下一篇：</strong><br/> 
- <span>写在前面
+ <span>纵向瀑布流的实现
 </span>
 </a>
 </div>
@@ -149,7 +183,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#触摸事件"><span class="toc-number">1.</span> <span class="toc-text">触摸事件</span></a></li></ol>
  
   </div>
 
