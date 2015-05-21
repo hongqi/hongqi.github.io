@@ -104,6 +104,18 @@
 <li>targetTouches: 位于<strong>当前dom</strong>元素的手指列表</li>
 <li>changedTouches: 涉及<strong>当前事件</strong>的手指列表</li>
 </ul>
+<h3 id="获取触摸列表">获取触摸列表</h3><h4 id="原生方法">原生方法</h4><pre><code><span class="keyword">var</span> obj = <span class="built_in">document</span>.getElementById(<span class="string">'id'</span>); 
+obj.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span><span class="params">(evt)</span> </span>{
+    <span class="built_in">console</span>.log(evt.touches); <span class="comment">//直接在evt上获取相应列表</span>
+})
+</code></pre><h4 id="jquery方法">jquery方法</h4><pre><code><span class="comment">//但是用jquery绑定事件的时候缺不同</span>
+<span class="keyword">var</span> $el = $(<span class="string">'#id'</span>);
+$el.bind(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span><span class="params">(evt)</span> </span>{
+    <span class="built_in">console</span>.log(evt.originalEvent.touches); <span class="comment">//jquery实在evt对象的子对象originalEvent上面</span>
+})
+</code></pre><h3 id="使用移动端库">使用移动端库</h3><p>移动端判断左滑还是右滑可以自己通过绑定touchstart和touchend事件来实现，但是还是建议使用移动端的库来实现更好。<br>比如可以使用jquery mobile或者zepto:</p>
+<pre><code>swipeLeft, swipeRight, swiprUp, swipeDown
+</code></pre><p>使用<em>bind</em>或者<em>on</em>来绑定事件即可</p>
 
         
         
