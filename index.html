@@ -108,7 +108,7 @@
 obj.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span><span class="params">(evt)</span> </span>{
     <span class="built_in">console</span>.log(evt.touches); <span class="comment">//直接在evt上获取相应列表</span>
 })
-</code></pre><h4 id="jquery方法">jquery方法</h4><pre><code><span class="comment">//但是用jquery绑定事件的时候缺不同</span>
+</code></pre><h4 id="jquery方法">jquery方法</h4><pre><code><span class="comment">//但是用jquery绑定事件的时候却不同</span>
 <span class="keyword">var</span> $el = $(<span class="string">'#id'</span>);
 $el.bind(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span><span class="params">(evt)</span> </span>{
     <span class="built_in">console</span>.log(evt.originalEvent.touches); <span class="comment">//jquery是在evt对象的子对象originalEvent上面</span>
